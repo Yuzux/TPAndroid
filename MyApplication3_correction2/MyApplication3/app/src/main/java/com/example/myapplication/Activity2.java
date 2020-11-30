@@ -132,8 +132,8 @@ public class Activity2 extends AppCompatActivity {
         myButton = null;
 
         //try {
-            String array[] = new String[] {"Toyota", "Mercedes", "BMW", "Volkswagen", "Skoda" };
-            Log.e("DEVE0304", "Error " + array[5]);
+        String array[] = new String[] {"Toyota", "Mercedes", "BMW", "Volkswagen", "Skoda" };
+        Log.e("DEVE0304", "Error " + array[5]);
         /*}
         catch (Exception e) {
             // This will catch any exception

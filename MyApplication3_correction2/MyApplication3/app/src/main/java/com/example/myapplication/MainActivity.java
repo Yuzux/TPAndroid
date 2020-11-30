@@ -100,19 +100,20 @@ public class MainActivity extends AppCompatActivity {
                         myTextView.setText(response);
                     }
                 }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Log.e("DEVE0304", "Request answer : Failed");
-                }
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("DEVE0304", "Request answer : Failed");
+            }
         });
 
         // Add the request to the RequestQueue.
         queue.add(stringRequest);
     };
 
-
-
-
+    public void goToActivityExtend(View view) {
+        Intent intent = new Intent(view.getContext(), Activity.class);
+        view.getContext().startActivity(intent);
+    }
 
 
 }
